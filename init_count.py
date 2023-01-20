@@ -5,6 +5,8 @@
 # count from 2 up to top_candidate
 top_candidate = 100
 
+prime_set = []
+
 for candidate in range(2,100):
   # brute force version:  check factors from 2 up to our candidate.  
   
@@ -24,3 +26,7 @@ for candidate in range(2,100):
     prime_set.append(candidate)
   else:
     print(candidate, " was not prime")
+
+print("============")
+print("Our primes")
+print(prime_set)
